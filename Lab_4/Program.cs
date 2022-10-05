@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,14 +11,14 @@ namespace Lab_4
         static void Main(string[] args)
         {
             Console.Write("Введіть розмір масиву: ");
-            int n = Convert.ToInt32(Console.ReadLine());
+            int n = int.Parse(Console.ReadLine());
 
             int[] arr = new int[n];
             Console.WriteLine("Заповніть масив");
             for (int i = 0; i < arr.Length; i++)
             {
                 Console.Write($"Елемент №{i + 1}: ");
-                arr[i] = Convert.ToInt32(Console.ReadLine());
+                arr[i] = int.Parse(Console.ReadLine());
             }
 
             Console.WriteLine();
